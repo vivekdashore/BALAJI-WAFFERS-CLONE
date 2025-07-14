@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "National Park", sans-serif;
+}
+body{
+    height: 100%;
+    background-color: #403092;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: #FAE00B;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    img{
+        height: 80%;
+        width: 15%;
+    }
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    width: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+color: #403092;
+font-weight: bold;
+
+   
+}
+/*ul:hover{
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.5s;
+
+}*/
+
+
+/*navbar button css start*/
+ 
+button {
+    padding: 0.9em 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: transparent;
+    border: 3px solid #ff0;
+    font-size: 14px;
+    position: relative;
+    font-family: inherit;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  button::before {
+    content: "Order Now";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    border-radius: 30px;
+  }
+  
+  button:hover::before {
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+  }
+  
+  button::after {
+    content: "Order Now";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0) rotateY(0deg);
+    opacity: 0;
+    border-radius: 30px;
+  }
+  
+  button:hover::after {
+    left: 0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+  }
+  .slider{
+    height: 500px;
+    width: 100%;
+  
+  
+      swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+   
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  
+  swiper-slide:nth-child(1){
+    background: #FAE00B;
+     background-image: url("https://media.licdn.com/dms/image/v2/D4D12AQFfnFMDa0LNZQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1712222283243?e=2147483647&v=beta&t=1Z4WQ_4ujvrtp9o6Deu6tmdgQUp5tlGmb8JJxXpIdMc");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }
+  
+swiper-slide:nth-child(2){
+    background: #01E2FF;
+    background-image: url("https://www.balajiwafers.com/wp-content/themes/custom/img/Hslider/balaji_masala_masti_m.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+swiper-slide:nth-child(3){
+    background: #F5FF24;
+    background-image: url("../assets/3-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+swiper-slide:nth-child(4){
+    background: #4476A9;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/056/718/759/large/yash-bhagnani-balaji-wafers.jpg?1669917008 ");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+swiper-slide:nth-child(5){
+    background: #C1370B;
+    background-image: url("https://www.salesforce.com/content/dam/web/en_in/www/images/customers/balaji-wafers-main-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+}
+
+ section{
+    width: 100%;
+    height: 80vh;
+    background-color: #F5FF24;
+    border-radius: 20px;
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+        padding-top: 40px;
+        margin-top: 20px;
+    }
+
+    .box{
+        height: 160px;
+        width: 160px;
+        border-radius: 20px 20px 30px 30px;
+        background-color: #01E2FF;
+        transition: width 1s, height 1s, transform 1s;
+    }
+ }
+.categories{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.box:nth-child(1){
+    background-image: url("../assets/mix-removebg-preview.png");
+    background-position: center;
+    background-size: 90%;
+}
+.box:nth-child(2){
+    background-image: url("../assets/chips1.avif");
+    background-position: center;
+    background-size:90%;
+
+}
+.box:nth-child(3){
+    background-image: url("../assets/sev1-removebg-preview.png");
+    background-position: center;
+    background-size:90%;
+    background-repeat: no-repeat;
+
+}
+.box:nth-child(4){
+    background-image: url("../assets/kurkure1-removebg-preview.png");
+    background-position: center;
+    background-size:65%;
+    background-repeat: no-repeat;
+
+}
+.box:nth-child(5){
+    background-image: url("../assets/pnuts-removebg-preview.png");
+    background-position: center;
+    background-size:85%;
+    background-repeat: no-repeat;
+
+}
+
+.box:hover{
+    cursor: pointer;
+    background-size: 100%;
+    background-color: #fff;
+    height: 200px;
+        width: 200px;
+        transform: rotate(360deg);
+}
+.box:nth-child(4):hover{
+    cursor: pointer;
+    background-size: 70%;
+    background-color: #fff;
+    transition:0.5s;
+}
+
+/*.box a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}*/
+
+.about-section{
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 20px;
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+        padding-top: 40px;
+        margin-top: 20px;
+    }
+    p{
+    
+        width: 90%;
+        text-align: center;
+        padding-left: 25px;
+        margin-left: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+}
+
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+ .about-box swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+  }
+
+ .about-box swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+  }
+  
+  .p p{
+    color:white;
+    position: relative;
+    text-align: left;
+    right: 60px;
+  }
+  .p:nth-child(9){
+    p{
+font-size: 13px;
+padding-top: 5px;
+  }
+}
+
+
+footer{
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: white;
+  margin-top: 550px;
+
+
+    h3{
+      margin: 40px 0px;
+      font-size: 25px;
+      color: #3F3091;
+      /* text-decoration-line: underline; */
+    }
+
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+      align-items: start;
+
+      li{
+        align-items: start;
+      }
+      li:hover{
+        font-size: 1.25rem;
+      }
+    }
+    #icon-ul{
+      flex-direction: row;
+      margin-top: 30px;
+    
+    }
+    .fa-square-whatsapp{
+      font-size: 30px;
+      color:#00AF37;
+    }
+    .fa-square-instagram{
+      font-size: 30px;
+      color:#F7025A;
+    }
+    .fa-square-twitter{
+      font-size: 30px;
+      color:#60A9DC ;
+    }
+  }
+
